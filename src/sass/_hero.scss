@@ -1,39 +1,97 @@
 .hero {
-  padding: 8px 20px;
   background-image: url('../images/hero/bg-hero-320@1x.png');
+  background-color: #e6e3e4;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 105%;
   background-attachment: fixed;
+  // background-position: center;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url('../images/hero/bg-hero-320@2x.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105%;
     background-attachment: fixed;
+    // background-position: center;
   }
 
   // Tablet images
   @media screen and (min-width: 768px) {
     background-image: url('../images/hero/bg-hero-768@1x.png');
+    background-size: 100%;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/hero/bg-hero-768@2x.png');
+      background-size: 100%;
     }
   }
 
   // Desctop images
   @media screen and (min-width: 769px) {
     background-image: url('../images/hero/bg-hero-1280@1x.png');
+    background-size: 100%;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/hero/bg-hero-1280@2x.png');
+      background-size: 100%;
     }
+  }
+}
+
+.hero.section {
+  padding-top: 4px;
+  padding-bottom: 8px;
+
+  //  Tablet styles
+  @media screen and (min-width: 768px) {
+    padding-top: 3px;
+    padding-bottom: 43px;
+  }
+  // Desctop styles
+  @media screen and (min-width: 1280px) {
+    padding-top: 29px;
+    padding-bottom: 90px;
+  }
+}
+
+.hero .container {
+  // Mobile styles
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+
+  //  Tablet styles
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  // Desctop styles
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //  Tablet styles
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    max-width: 319px;
+  }
+  // Desctop styles
+  @media screen and (min-width: 1280px) {
+    max-width: 758px;
   }
 }
 
@@ -46,8 +104,21 @@
   text-align: center;
   letter-spacing: -0.03em;
   color: #3c322d;
-  margin: 0;
   margin-bottom: 18px;
+
+  //  Tablet styles
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 1.23;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  // Desctop styles
+  @media screen and (min-width: 1280px) {
+    font-size: 60px;
+    line-height: 1.08;
+    margin-bottom: 20px;
+  }
 }
 
 .hero__subtitle {
@@ -60,14 +131,28 @@
   color: #3c322d;
   margin: 0;
   margin-bottom: 28px;
+
+  //  Tablet styles
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  // Desctop styles
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
 }
 
 .hero__btn {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 28px;
-  padding: 9px 35px;
+  width: 145px;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 0;
   background: #f3848c;
+  cursor: pointer;
 
   box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
   border: none;
@@ -77,10 +162,33 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   text-align: center;
 
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: #f3848c;
+    background: #ffffff;
+    border: 1px solid #f3848c;
+  }
+
+  &:active {
+    background: #f3848c;
+    border: 1px solid #ffffff;
+  }
+
+  //  Tablet styles
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  // Desctop styles
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
 }
 
 .socials {
@@ -93,5 +201,14 @@
 .socials__item {
   &:not(:last-child) {
     margin-right: 16px;
+  }
+}
+
+.social__icon {
+  fill: #3c322d;
+
+  &:hover,
+  &:focus {
+    fill: #f3848c;
   }
 }
