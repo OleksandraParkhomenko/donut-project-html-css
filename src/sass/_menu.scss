@@ -1,0 +1,40 @@
+.header {
+  padding: 16px 20px;
+  display: flex;
+
+  background-image: url('../images/hero/bg-hero-320@1x.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero/bg-hero-320@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+  // Tablet images
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/hero/bg-hero-768@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bg-hero-768@2x.png');
+    }
+  }
+
+  // Desctop images
+  @media screen and (min-width: 769px) {
+    background-image: url('../images/hero/bg-hero-1280@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bg-hero-1280@2x.png');
+    }
+  }
+}

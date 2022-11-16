@@ -1,1 +1,97 @@
+.hero {
+  padding: 8px 20px;
+  background-image: url('../images/hero/bg-hero-320@1x.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero/bg-hero-320@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+  // Tablet images
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/hero/bg-hero-768@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bg-hero-768@2x.png');
+    }
+  }
+
+  // Desctop images
+  @media screen and (min-width: 769px) {
+    background-image: url('../images/hero/bg-hero-1280@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bg-hero-1280@2x.png');
+    }
+  }
+}
+
+.hero__title {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #3c322d;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.hero__subtitle {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: #3c322d;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.hero__btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  padding: 9px 35px;
+  background: #f3848c;
+
+  box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
+  border: none;
+  border-radius: 25px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.socials {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}

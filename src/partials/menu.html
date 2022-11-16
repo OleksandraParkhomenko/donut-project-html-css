@@ -1,0 +1,49 @@
+<header class="header">
+  <picture>
+    <!-- Desktop -->
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ./images/logo/logo-1280@1x.png 1x,
+        ./images/logo/logo-1280@2x.png 2x
+      "
+      type="image/png"
+    />
+    <!-- Tablet -->
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/logo/logo-768@1x.png 1x,
+        ./images/logo/logo-768@2x.png 2x
+      "
+      type="image/png"
+    />
+
+    <!-- Mobile -->
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/logo/logo-320@1x.png 1x,
+        ./images/logo/logo-320@2x.png 2x
+      "
+      type="image/png"
+    />
+
+    <img
+      class="team__member-picture"
+      src="./images/logo/logo-320@1x.png"
+      alt="logo"
+    />
+  </picture>
+
+  <button
+    class="menu-btn js-open-menu"
+    type="button"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg width="40" height="40">
+      <use href="./images/icons/icons.svg#icon-menu-btn"></use>
+    </svg>
+  </button>
+</header>
