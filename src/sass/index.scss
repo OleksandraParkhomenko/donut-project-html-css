@@ -1,2 +1,20 @@
 @import './common';
-@import './example';
+
+// body
+@import './vars';
+
+// header 
+@import './menu';
+
+// main
+@import './hero';
+@import './about-us';
+@import './program';
+@import './speakers';
+@import './price';
+@import './reviews';
+@import './registration';
+@import './contact';
+
+// footer
+@import './footer';
