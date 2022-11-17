@@ -11,11 +11,16 @@
             text-align: center;
         }
 
-        &__text {
+        &__text,
+        &__text-hidden {
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
             color: var(--primary-color-text);
+        }
+
+        &__text-hidden{
+            margin-bottom: 16px;
         }
 
         &__items {
@@ -28,21 +33,50 @@
         }
 
         &__item {
+            display: flex;
+            align-items: center;
+
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
             color: var(--primary-color-text);
+        }
+
+        &__item::before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            background-size: contain;
+            background-image: url(../images/icons/Іко.svg);
+            background-repeat: no-repeat;
+        }
+
+        #invisible-text-program {
+            display: none;
+        }
+
+        #btn-program {
+            background-color: transparent;
+            border: transparent;
+            outline: transparent;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            color: var(--primary-color-text);;
         }
     }
 
     .wrap-pic {
         display: flex;
         justify-content: center;
+        margin-top: 24px;
 
         &__column:last-child {
             margin-top: 20px;
             margin-left: 20px;
-            /* margin-left: auto */
         }
         
         &__item:first-child {
@@ -51,11 +85,13 @@
         
         &__inner {
             position: relative;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: linear-gradient(0.12deg, #000000 -11.45%, rgba(156, 156, 156, 0) 69.04%);
         }
         
         &__img {
-            width: 130px;
-            height: 130px;
             border-radius: 50%;
             border: 1px solid var(--primary-bg-button);
         }
@@ -93,7 +129,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .program {
         display: flex;
 
@@ -107,11 +143,17 @@
             color: var(--primary-color-text);
         }
         
-        &__text {
+        &__text,
+        &__text-hidden {
+            width: 326px;
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
             color: var(--primary-color-text);
+        }
+
+        &__text-hidden {
+            margin-bottom: 16px;
         }
         
         &__items {
@@ -124,6 +166,35 @@
         }
         
         &__item {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            color: var(--primary-color-text);
+        }
+
+        &__item::before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            background-size: contain;
+            background-image: url(../images/icons/Іко.svg);
+            background-repeat: no-repeat;
+        }
+
+        #invisible-text-program {
+            display: none;
+        }
+        
+        #btn-program {
+            
+            background-color: transparent;
+            border: transparent;
+            outline: transparent;
+
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
@@ -133,6 +204,7 @@
 
     .wrap-pic {
         display: flex;
+        margin-left: 40px;
 
         &__column:last-child {
             margin-top: 40px;
@@ -148,8 +220,6 @@
         }
         
         &__img {
-            width: 152px;
-            height: 152px;
             border-radius: 50%;
             border: 1px solid var(--primary-bg-button);
         }
@@ -208,7 +278,8 @@
             color: var(--primary-color-text);
         }
 
-        &__text {
+        &__text,
+        &__text-hidden {
             width: 375px;
 
             font-weight: 400;
@@ -232,6 +303,21 @@
             line-height: 1.22;
             color: var(--primary-color-text);
         }
+
+        &__item::before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            background-size: contain;
+            background-image: url(../images/icons/Іко.svg);
+            background-repeat: no-repeat;
+        }
+
+        #btn-program {
+            display: none;
+        }
     }
 
     .wrap-pic {
@@ -251,11 +337,8 @@
         }
 
         &__img {
-            width: 289px;
-            height: 289px;
             border-radius: 50%;
-            border: 1px solid red;
-            background-color: #F3848C;
+            border: 1px solid #F3848C;
         }
 
         &__position {

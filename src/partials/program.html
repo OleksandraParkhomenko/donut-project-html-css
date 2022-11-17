@@ -14,20 +14,31 @@
             <li class="program__item">Secret receipt of cooking from Eva</li>
             <li class="program__item">All products are included in the price</li>
         </ul>
-        <p class="program__text">
+        <span id="dots-program"></span>
+        <p class="program__text-hidden" id="invisible-text-program">
             Come with your dear people and friends and you will spend an unforgettable time and will become a real
-            professional
-            in donuts cooking!
+            professional<br>in donuts cooking!
         </p>
+        <button id="btn-program" onclick="MoreLessTwo()">Read more</button>
     </div>
     <div class="wrap-pic">
         <div class="wrap-pic__column">
             <ul class="wrap-pic__items list">
                 <li class="wrap-pic__item">
                     <div class="wrap-pic__inner">
-                        <picture>
-                            <source>
-                            <!-- <img class="wrap-pic__img" src="../images/" alt=""> -->
+                        <picture class="wrap-pic__picture">
+                            <source srcset="./images/program/program-1-320@1x.webp 1x, ./images/program/program-1-320@2x.webp 2x" 
+                                type="image/webp"
+                                media="(max-width: 767px)"
+                            />
+                            <source srcset="./images/program/program-1-1280@1x.webp 1x, ./images/program/program-1-1280@2x.webp 2x"
+                                type="image/webp"
+                                media="(min-width: 1280px)"
+                            />
+                            <source srcset="./images/program/program-1-768@1x.webp 1x, ./images/program/program-1-768@2x.webp 2x"
+                                type="image/webp"
+                                media="(min-width: 768px)" />
+                            <img src="./images/program/program-1-1280@1x.webp" class="wrap-pic__img" alt="Type of the event" />
                         </picture>
                         <div class="wrap-pic__position">
                             <p class="wrap-pic__subtitle">Type of the event</p>
@@ -38,9 +49,20 @@
                 </li>
                 <li class="wrap-pic__item">
                     <div class="wrap-pic__inner">
-                        <picture>
-                            <source>
-                            <!-- <img class="wrap-pic__img" src="" alt=""> -->
+                        <picture class="wrap-pic__picture">
+                            <source srcset="./images/program/program-3-320@1x.webp 1x, ./images/program/program-3-320@2x.webp 2x"
+                                type="image/webp" 
+                                media="(max-width: 767px)"
+                            />
+                            <source srcset="./images/program/program-3-1280@1x.webp 1x, ./images/program/program-3-1280@2x.webp 2x"
+                                type="image/webp" 
+                                media="(min-width: 1280px)"
+                            />
+                            <source srcset="./images/program/program-3-768@1x.webp 1x, ./images/program/program-3-768@2x.webp 2x"
+                                type="image/webp"
+                                media="(min-width: 768px)"
+                            />
+                            <img src="./images/program/program-3-1280@1x.webp" class="wrap-pic__img" alt="Type of the event" />
                         </picture>
                         <div class="wrap-pic__position">
                             <p class="wrap-pic__subtitle">Type of the event</p>
@@ -54,9 +76,17 @@
             <ul class="wrap-pic__items list">
                 <li class="wrap-pic__item">
                     <div class="wrap-pic__inner">
-                        <picture>
-                            <source>
-                            <!-- <img class="wrap-pic__img" src="" alt=""> -->
+                        <picture class="wrap-pic__picture">
+                            <source srcset="./images/program/program-2-320@1x.webp 1x, ./images/program/program-2-320@2x.webp 2x"
+                                type="image/webp" 
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/program/program-2-1280@1x.webp 1x, ./images/program/program-2-1280@2x.webp 2x"
+                                type="image/webp" 
+                                media="(min-width: 1280px)" />
+                            <source srcset="./images/program/program-2-768@1x.webp 1x, ./images/program/program-2-768@2x.webp 2x"
+                                type="image/webp"    
+                                media="(min-width: 768px)" />
+                            <img src="./images/program/program-2-1280@1x.webp" class="wrap-pic__img" alt="Number of guests" />
                         </picture>
                         <div class="wrap-pic__position">
                             <p class="wrap-pic__subtitle">Number of guests</p>
@@ -66,9 +96,17 @@
                 </li>
                 <li class="wrap-pic__item">
                     <div class="wrap-pic__inner">
-                        <picture>
-                            <source>
-                            <!-- <img class="wrap-pic__img" src="" alt=""> -->
+                        <picture class="wrap-pic__picture">
+                            <source srcset="./images/program/program-4-320@1x.webp 1x, ./images/program/program-4-320@2x.webp 2x"
+                                type="image/webp" 
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/program/program-4-1280@1x.webp 1x, ./images/program/program-4-1280@2x.webp 2x"
+                                type="image/webp" 
+                                media="(min-width: 1280px)" />
+                            <source srcset="./images/program/program-4-768@1x.webp 1x, ./images/program/program-4-768@2x.webp 2x"
+                                type="image/webp"
+                                media="(min-width: 768px)" />
+                            <img src="./images/program/program-4-1280@1x.webp" class="wrap-pic__img" alt="The host speaks" />
                         </picture>
                         <div class="wrap-pic__position">
                             <p class="wrap-pic__subtitle">The host speaks</p>

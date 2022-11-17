@@ -1,4 +1,15 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 480px;
+        padding: 20px;
+    }
+
     .about-us {
 
         &__img {
@@ -23,31 +34,54 @@
             text-align: center;
         }
 
-        &__text:not(:last-child) {
+        &__text,
+        &__text-hidden {
             margin-bottom: 16px;
-        }
 
-        &__text {
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
             color: var(--primary-color-text);
         }
+
+        #invisible-text-about-us {
+            display: none;
+        }
+
+        #btn-about-us {
+            background-color: transparent;
+            border: transparent;
+            outline: transparent;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            color: var(--primary-color-text);;
+        }
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .container {
+        max-width: 768px;
+        padding: 40px 32px;
+    }
 
     .about-us {
         display: flex;
+        
+        &__picture {
+            flex: 1;
+        }
 
         &__img {
-            margin-right: 32px;
-    
-            width: 336px;
-            height: 359px;
-            background: #F3848C;
             border-radius: 24px;
+        }
+
+        &__container {
+            flex: 1;
+            margin-left: 32px;
         }
 
         &__title {
@@ -60,31 +94,54 @@
             color: var(--primary-color-text);
         }
 
-        &__text:not(:last-child) {
-            margin-bottom: 16px;
-        }
+        &__text,
+        &__text-hidden {
+            margin-bottom: 20px;
 
-        &__text {
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
             color: var(--primary-color-text);
+        }
+
+        #invisible-text-about-us {
+            display: none;
+        }
+
+        #btn-about-us {
+            background-color: transparent;
+            border: transparent;
+            outline: transparent;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            color: var(--primary-color-text);;
         }
     }
 }
 
 @media screen and (min-width: 1280px) {
 
+    .container {
+        max-width: 1280px;
+        padding: 50px 16px;
+    }
+
     .about-us {
         display: flex;
 
         &__img {
-            margin-right: 32px;
-        
-            width: 608px;
-            height: 381px;
-            background: #F3848C;
             border-radius: 24px;
+        }
+
+        &__picture {
+            flex: 1;
+        }
+
+        &__container {
+            flex: 1;
+            margin-left: 32px;
         }
         
         &__title {
@@ -101,11 +158,16 @@
             margin-bottom: 16px;
         }
         
-        &__text {
+        &__text,
+        &__text-hidden {
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
             color: var(--primary-color-text);
+        }
+
+        #btn-about-us {
+            display: none;
         }
     }
 }
