@@ -1,21 +1,21 @@
 <section class="about-us container">
-    <picture>
-        <source 
-            srcset="./images/about/about-320@1x.webp x1, ./images/about/about-320@2x.webp x2" 
+    <picture class="about-us__picture">
+        <source
+            srcset="./images/about/about-320@1x.webp 1x, ./images/about/about-320@2x.webp 2x" 
             type="image/webp"
             media="(max-width: 767px)"
         />
-        <source 
-            srcset="./images/about/about-768@1x.webp x1, ./images/about/about-768@2x.webp x2" 
+        <source
+            srcset="./images/about/about-1280@1x.webp 1x, ./images/about/about-1280@2x.webp 2x" 
             type="image/webp"
             media="(min-width: 1280px)" 
         />
-        <source 
-            srcset="./images/about/about-1280@1x.webp x1, ./images/about/about-1280@2x.webp x2" 
+        <source
+            srcset="./images/about/about-768@1x.webp 1x, ./images/about/about-768@2x.webp 2x" 
             type="image/webp"
             media="(min-width: 768px)"
         />
-        <img 
+        <img
             src="./images/about/about-1280@1x.webp"
             class="about-us__img"
             alt="sweet donut"
@@ -35,10 +35,12 @@
             weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for
             excellence.
         </p>
-        <p class="about-us__text">
+        <span id="dots-about-us"></span>
+        <p class="about-us__text-hidden" id="invisible-text-about-us">
             We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you
             will
             enjoy our cooking atmosphere!
         </p>
+        <button id="btn-about-us" onclick="MoreLess()">Read more</button>
     </div>
 </section>

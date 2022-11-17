@@ -16,7 +16,13 @@
             max-width: 440px;
             padding: 40px 8px 32px 8px;
             border-radius: 10px;
-            background: rgba(61, 44, 44, 0.6);
+            box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+            background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/registration-bg-320@1x.jpg) no-repeat center/cover, #C4C4C4;
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/registration-bg-320@2x.jpg) no-repeat center/cover, #C4C4C4;
+            }
         }
 
         &__info {
@@ -84,6 +90,10 @@
             color: var(--button-color-text);
         }
 
+        &__input:not(:placeholder-shown):required:invalid {
+            border-color: red;
+        }
+
         &__input[type="text"],
         &__input[type="tel"] {
             margin-bottom: 20px;
@@ -118,7 +128,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px){
 
     .registration {
 
@@ -137,7 +147,14 @@
             display: flex;
             width: 704px;
             border-radius: 10px;
-            background: pink;
+            box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+            background: url(../images/registration/registration-bg-768@1x.jpg) no-repeat center/cover, #C4C4C4;
+            
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background: url(../images/registration/registration-bg-768@2x.jpg) no-repeat center/cover, #C4C4C4;
+            }
         }
         
         &__info {
@@ -208,6 +225,10 @@
             padding: 0;
             color: var(--button-color-text);
         }
+
+        &__input:not(:placeholder-shown):required:invalid {
+            border-color: red;
+        }
         
         &__input[type="text"],
         &__input[type="tel"] {
@@ -266,7 +287,14 @@
             margin-left: auto;
             margin-right: auto;
             border-radius: 10px;
-            background: pink;
+            box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+            background: url(../images/registration/registration-bg-1280@1x.jpg) no-repeat center/cover, #C4C4C4;
+
+            @media (min-device-pixel-ratio: 2), 
+                (min-resolution: 192dpi), 
+                (min-resolution: 2dppx) {
+                background: url(../images/registration/registration-bg-1280@2x.jpg) no-repeat center/cover,#C4C4C4;
+            }
         }
         
         &__info {
@@ -336,6 +364,10 @@
             border-bottom: 1px solid #000000;
             padding: 0;
             color: var(--primary-color-text);
+        }
+
+        &__input:not(:placeholder-shown):required:invalid {
+            border-color: red;
         }
 
         &__input[type="text"],
