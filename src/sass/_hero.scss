@@ -168,8 +168,8 @@
 
   color: var(--button-color-text);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--hover-animation),
+    background-color var(--hover-animation), box-shadow var(--hover-animation);
 
   &:hover,
   &:focus {
@@ -179,8 +179,11 @@
   }
 
   &:active {
+    color: var(--button-color-text);
     background-color: var(--primary-bg-button);
     border: 1px solid var(--accent-bg-button);
+    box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
   }
 
   //  Tablet styles
@@ -189,8 +192,6 @@
   }
   // Desctop styles
   @media screen and (min-width: 1200px) {
-    font-size: 24px;
-    line-height: 1.2;
     margin-bottom: 28px;
   }
 }
@@ -211,7 +212,7 @@
 .socials__link {
   color: var(--primary-color-icon);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--hover-animation);
 
   &:hover,
   &:focus {
