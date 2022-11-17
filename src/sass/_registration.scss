@@ -1,0 +1,382 @@
+@media screen and (max-width: 767px) {
+    .registration {
+
+        &__title {
+            margin-bottom: 27px;
+        
+            font-family: Montserrat Alternates, sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 1.21;
+            color: var(--secondary-color-text);
+            text-align: center;
+        }
+
+        &__container {
+            max-width: 440px;
+            padding: 40px 8px 32px 8px;
+            border-radius: 10px;
+            background: rgba(61, 44, 44, 0.6);
+        }
+
+        &__info {
+            margin-bottom: 20px;
+            width: 114px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            color: var(--button-color-text);
+            text-align: center;
+        }
+
+        &__decor {
+            width: 100%;
+            height: 1px;
+            background-color: var(--accent-bg-button);
+        }
+    }
+
+    .form {
+        padding-top: 20px;
+
+        &__title {
+            width: 210px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            color: var(--picture-color-text);
+            text-align: center;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 32px;
+        }
+
+        &__label {
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            margin: -1px;
+        }
+
+        &__input {
+            background: transparent;
+            outline: transparent;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: 1px solid var(--picture-color-text);
+            padding: 0;
+            color: var(--button-color-text);
+        }
+
+        &__input[type="text"],
+        &__input[type="tel"] {
+            margin-bottom: 20px;
+        }
+
+        &__input::placeholder {
+            color: var(--button-color-text);
+        }
+
+        &__button {
+            display: block;
+            width: 145px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8px 0;
+            outline: transparent;
+            border: transparent;
+            border-radius: 25px;
+        
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.22;
+            color: var(--picture-color-text);
+        
+            background: var(--primary-bg-button);
+            filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+        }
+
+        &__button:active {
+            box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .registration {
+
+        &__title {
+            margin-bottom: 27px;
+        
+            font-family: Montserrat Alternates, sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1.21;
+            color: var(--secondary-color-text);
+            text-align: center;
+        }
+        
+        &__container {
+            display: flex;
+            width: 704px;
+            border-radius: 10px;
+            background: pink;
+        }
+        
+        &__info {
+            width: 90px;
+            margin-top: 85px;
+            margin-left: 62px;
+    
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            color: #000000;
+            text-align: end;
+        }
+        
+        &__decor {
+            margin: 60px 24px 32px 32px;
+            width: 1px;
+            height: 154px;
+            background: rgba(0, 0, 0, 0.5);
+    
+        }
+    }
+        
+    .form {
+        display: flex;
+    
+        &__con-tab-flex {
+            margin-right: 74px;
+        }
+        
+        &__title {
+            width: 210px;
+            margin-top: 40px;
+        
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            color: #000000;
+        }
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+        
+        &__label {
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            margin: -1px;
+        }
+        
+        &__input {
+            background: transparent;
+            outline: transparent;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: 1px solid #000000;
+            padding: 0;
+            color: var(--button-color-text);
+        }
+        
+        &__input[type="text"],
+        &__input[type="tel"] {
+            margin-bottom: 20px;
+        }
+        
+        &__input::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+        
+        &__button {
+            display: block;
+            margin-top: 103px;
+            width: 145px;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8px 0;
+            outline: transparent;
+            border: transparent;
+            border-radius: 25px;
+        
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.22;
+            color: var(--picture-color-text);
+        
+            background: var(--primary-bg-button);
+            filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+        }
+        
+        &__button:active {
+            box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .registration {
+
+        &__title {
+            margin-bottom: 27px;
+        
+            font-family: Montserrat Alternates, sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1.21;
+            color: var(--secondary-color-text);
+            text-align: center;
+        }
+        
+        &__container {
+            display: flex;
+            width: 1034px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            background: pink;
+        }
+        
+        &__info {
+            width: 127px;
+            margin-top: 85px;
+            margin-left: 213px;
+        
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            color: var(--primary-color-text);
+            text-align: end;
+        }
+        
+        &__decor {
+            margin: 40px 28px;
+            width: 1px;
+            height: 154px;
+            background: rgba(0, 0, 0, 0.5);        
+        }
+    }
+
+    .form {
+        display: flex;
+
+        &__con-tab-flex {
+            margin-right: 12px;
+        }
+
+        &__title {
+            width: 250px;
+            margin-top: 40px;
+
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.2;
+            color: var(--primary-color-text);
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+            margin-bottom: 40px;
+        }
+
+        &__label {
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            margin: -1px;
+        }
+
+        &__input {
+            width: 212px;
+            background: transparent;
+            outline: transparent;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: 1px solid #000000;
+            padding: 0;
+            color: var(--primary-color-text);
+        }
+
+        &__input[type="text"],
+        &__input[type="tel"] {
+            margin-bottom: 14px;
+        }
+
+        &__input::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        &__button {
+            display: block;
+            margin-top: 103px;
+            width: 145px;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8px 0;
+            outline: transparent;
+            border: transparent;
+            border-radius: 25px;
+
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.22;
+            color: var(--picture-color-text);
+
+            background: var(--primary-bg-button);
+            filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+        }
+
+        &__button:focus,
+        &__button:hover {
+            border: 1px solid var(--primary-bg-button);
+            color: var(--accent-color-icon);
+            background: var(--accent-bg-button);
+        }
+
+        &__button:active {
+            box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+        }
+    }
+}
