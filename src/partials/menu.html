@@ -1,0 +1,73 @@
+<div class="header-wrap">
+  <div class="menu-wrap container">
+    <picture class="header-logo">
+      <!-- Desktop -->
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/logo/logo-1280@1x.png 1x,
+          ./images/logo/logo-1280@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/logo/logo-768@1x.png 1x,
+          ./images/logo/logo-768@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <!-- Mobile -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/logo/logo-320@1x.png 1x,
+          ./images/logo/logo-320@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img
+        class="team__member-picture"
+        src="./images/logo/logo-320@1x.png"
+        alt="logo"
+      />
+    </picture>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="">About us</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">Program</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">Speakers</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">Price</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">Reviews</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      class="menu-btn header-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="40" height="40">
+        <use href="./images/icons/icons.svg#icon-menu-btn"></use>
+      </svg>
+    </button>
+  </div>
+</div>

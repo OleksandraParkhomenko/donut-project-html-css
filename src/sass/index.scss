@@ -1,10 +1,11 @@
 @import './common';
-
+@import './resets';
 // body
 @import './vars';
 
-// header 
+// header
 @import './menu';
+@import './mobile-menu';
 
 // main
 @import './hero';
