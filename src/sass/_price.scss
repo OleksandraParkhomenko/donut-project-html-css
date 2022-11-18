@@ -9,7 +9,7 @@
         padding-right: 32px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 100px;
         padding-left: 16px;
         padding-right: 16px;
@@ -32,10 +32,27 @@
     }
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 20px;
-        font-size: 18px;
+        margin-bottom: 31px;
+        font-size: 32px;
         line-height: 1.25;
+
+        &--mini {
+            margin-bottom: 16px;
+            font-size: 18px;
+            line-height: 1.22;
+        }
     }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 27px;
+
+        &--mini {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+
+
 }
 
 .price__flex {
@@ -67,6 +84,7 @@
 
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
+        padding: 20px 10px 20px 8px;
         background-image: url(../images/price/price-768@1x.jpg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -116,11 +134,17 @@
     }
 
     @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2*14px)/3);
+    }
+
+    @media screen and (min-width: 1280px) {
         flex-basis: calc((100% - 2*32px)/3);
     }
 }
 
 .price__item {
+    display: inline-flex;
+    align-items: flex-start;
     margin-bottom: 12px;
     font-family: 'Montserrat';
     font-weight: 400;
@@ -150,8 +174,6 @@
     }
 }
 
-
-
 .price__item:before {
     content: "";
     margin-right: 10px;
@@ -168,7 +190,7 @@
     background-position: center;
 
     @media screen and (min-width: 1280px) {
-        margin-right: 24px;
+        margin-right: 16px;
     }
 }
 
