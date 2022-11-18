@@ -1,0 +1,127 @@
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 68px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 126px;
+    }
+}
+
+.contact__title {
+    margin-bottom: 27px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--secondary-color-text);
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.22;
+    }
+}
+
+.contact__text {
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--secondary-color-text);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 27px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+.contact__input {
+    margin-bottom: 22px;
+    width: 280px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.25;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background-color: inherit;
+
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 18px;
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 394px;
+    }
+
+}
+
+.contact__input--retreat {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 34px;
+    }
+}
+
+.contact__button {
+    width: 145px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--button-accent-text);
+    color: var(--button-color-text);
+    padding-top: 8px;
+    padding-bottom: 9px;
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-bg-button);
+        color: var(--button-accent-text);
+        border: 1px solid var(--button-accent-text);
+    }
+
+    &:active {
+        background-color: var(--primary-bg-button);
+        color: var(--button-color-text);
+        border: 1px solid var(--accent-bg-button);
+    }
+}

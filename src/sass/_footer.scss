@@ -1,0 +1,113 @@
+.footer__container {
+    position: relative;
+    padding-top: 28px;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (max-width: 767px) {
+        height: 154px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        padding-left: 33px;
+        padding-right: 16px;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 31px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 37px;
+    }
+}
+
+.social__item--first {
+    margin-right: 16px;
+}
+
+.social__item--second {
+    margin-right: 20px;
+}
+
+.social__icon {
+    fill: var(--secondary-color-icon);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color-icon);
+    }
+}
+
+
+.footer__list {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 100px;
+        margin-bottom: 101px;
+    }
+}
+
+.footer__link {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--secondary-color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color-icon);
+    }
+}
+
+.footer__icon {
+    margin-right: 4px;
+    fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.footer__picture {
+    position: absolute;
+    top: 97px;
+    display: block;
+    background-image: url("../images/footer/footer-donuts-320.png");
+    width: 60px;
+    height: 40px;
+    margin-left: 137px;
+    margin-right: 123px;
+    margin-bottom: 17px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

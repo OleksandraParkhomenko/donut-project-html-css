@@ -1,0 +1,101 @@
+.speaker {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 33px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 77px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 101px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.speaker__title {
+    margin-bottom: 12px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.20;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 32px;
+        line-height: 1.21;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 5px;
+    }
+}
+
+.speaker__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+        gap: 32px;
+    }
+}
+
+.speaker__item {
+    flex-basis: calc((100% - 20px)/2);
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 3*32px)/4);
+    }
+}
+
+.speaker__picture {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.speaker__name {
+    margin-bottom: 12px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
+    }
+}
+
+.speaker__text {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+}
