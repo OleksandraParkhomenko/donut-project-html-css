@@ -1,0 +1,146 @@
+.reviews {
+    position: relative;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        & {
+            height: 721px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        & {
+            height: 826px;
+        }
+    }
+}
+
+.reviews__name {
+    margin-bottom: 27px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.20;
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+.reviews__text {
+
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1001px;
+    }
+}
+
+.reviews__pearson {
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 767px) {
+        &--john {
+            display: none;
+        }
+
+        &--elisabeth {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &--will {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--john {
+            position: absolute;
+            top: 66px;
+            left: 0;
+        }
+
+        &--elisabeth {
+            position: absolute;
+            top: 66px;
+            right: 0;
+        }
+    }
+
+    .reviews__title {
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.22;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 27px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        &--john {
+            position: absolute;
+            top: 66px;
+            left: 100px;
+        }
+
+        &--elisabeth {
+            position: absolute;
+            top: 66px;
+            right: 100px;
+        }
+    }
+}
+
+.reviews__icon {
+    margin-bottom: 8px;
+}
+
+.reviews__coment {
+    margin-top: auto;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 22px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 27px;
+    }
+}
+
+
+.reviews__pagination {
+    font-size: 14px;
+    line-height: 1.21;
+
+    &::before {
+        content: "";
+        margin-right: 12px;
+        display: inline-block;
+        width: 35px;
+        border: 2px solid #F3848C;
+    }
+
+    &::after {
+        content: "";
+        margin-left: 12px;
+        display: inline-block;
+        width: 35px;
+        border: 2px solid #F3848C;
+    }
+}

@@ -4,7 +4,7 @@
 
         &__title {
             margin-bottom: 27px;
-        
+
             font-family: Montserrat Alternates, sans-serif;
             font-weight: 600;
             font-size: 24px;
@@ -19,9 +19,10 @@
             border-radius: 10px;
             box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
             background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/registration-bg-320@1x.jpg) no-repeat center/cover, #C4C4C4;
+
             @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
                 background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)), url(../images/registration/registration-bg-320@2x.jpg) no-repeat center/cover, #C4C4C4;
             }
         }
@@ -113,12 +114,12 @@
             outline: transparent;
             border: transparent;
             border-radius: 25px;
-        
+
             font-weight: 400;
             font-size: 18px;
             line-height: 1.22;
             color: var(--picture-color-text);
-        
+
             background: var(--primary-bg-button);
             filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
         }
@@ -129,14 +130,13 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px){
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 
     .registration {
-        margin-top: 80px;
 
         &__title {
             margin-bottom: 27px;
-        
+
             font-family: Montserrat Alternates, sans-serif;
             font-weight: 600;
             font-size: 32px;
@@ -144,66 +144,66 @@
             color: var(--secondary-color-text);
             text-align: center;
         }
-        
+
         &__container {
             display: flex;
             width: 704px;
             border-radius: 10px;
             box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
             background: url(../images/registration/registration-bg-768@1x.jpg) no-repeat center/cover, #C4C4C4;
-            
+
             @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
                 background: url(../images/registration/registration-bg-768@2x.jpg) no-repeat center/cover, #C4C4C4;
             }
         }
-        
+
         &__info {
             width: 90px;
             margin-top: 85px;
             margin-left: 62px;
-    
+
             font-weight: 500;
             font-size: 18px;
             line-height: 1.22;
             color: #000000;
             text-align: end;
         }
-        
+
         &__decor {
             margin: 60px 24px 32px 32px;
             width: 1px;
             height: 154px;
             background: rgba(0, 0, 0, 0.5);
-    
+
         }
     }
-        
+
     .form {
         display: flex;
-    
+
         &__con-tab-flex {
             margin-right: 74px;
         }
-        
+
         &__title {
             width: 210px;
             margin-top: 40px;
-        
+
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
             color: #000000;
         }
-        
+
         &__container {
             display: flex;
             flex-direction: column;
             margin-top: 16px;
             margin-bottom: 32px;
         }
-        
+
         &__label {
             position: absolute;
             white-space: nowrap;
@@ -216,7 +216,7 @@
             clip-path: inset(50%);
             margin: -1px;
         }
-        
+
         &__input {
             background: transparent;
             outline: transparent;
@@ -231,16 +231,16 @@
         &__input:not(:placeholder-shown):required:invalid {
             border-color: red;
         }
-        
+
         &__input[type="text"],
         &__input[type="tel"] {
             margin-bottom: 20px;
         }
-        
+
         &__input::placeholder {
             color: rgba(0, 0, 0, 0.5);
         }
-        
+
         &__button {
             display: block;
             margin-top: 103px;
@@ -252,16 +252,16 @@
             outline: transparent;
             border: transparent;
             border-radius: 25px;
-        
+
             font-weight: 400;
             font-size: 18px;
             line-height: 1.22;
             color: var(--picture-color-text);
-        
+
             background: var(--primary-bg-button);
             filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
         }
-        
+
         &__button:active {
             box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
         }
@@ -271,11 +271,10 @@
 @media screen and (min-width: 1280px) {
 
     .registration {
-        margin-top: 100px;
 
         &__title {
             margin-bottom: 27px;
-        
+
             font-family: Montserrat Alternates, sans-serif;
             font-weight: 600;
             font-size: 32px;
@@ -283,7 +282,7 @@
             color: var(--secondary-color-text);
             text-align: center;
         }
-        
+
         &__container {
             display: flex;
             width: 1034px;
@@ -293,30 +292,30 @@
             box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
             background: url(../images/registration/registration-bg-1280@1x.jpg) no-repeat center/cover, #C4C4C4;
 
-            @media (min-device-pixel-ratio: 2), 
-                (min-resolution: 192dpi), 
-                (min-resolution: 2dppx) {
-                background: url(../images/registration/registration-bg-1280@2x.jpg) no-repeat center/cover,#C4C4C4;
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: url(../images/registration/registration-bg-1280@2x.jpg) no-repeat center/cover, #C4C4C4;
             }
         }
-        
+
         &__info {
             width: 127px;
             margin-top: 85px;
             margin-left: 213px;
-        
+
             font-weight: 500;
             font-size: 20px;
             line-height: 1.2;
             color: var(--primary-color-text);
             text-align: end;
         }
-        
+
         &__decor {
             margin: 40px 28px;
             width: 1px;
             height: 154px;
-            background: rgba(0, 0, 0, 0.5);        
+            background: rgba(0, 0, 0, 0.5);
         }
     }
 
