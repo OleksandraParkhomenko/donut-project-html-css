@@ -1,10 +1,8 @@
 .hero {
   background-image: url('../images/hero/bg-hero-320@1x.png');
-  // background-color: #e6e3e4;
   background-repeat: no-repeat;
   background-size: 105%;
   background-attachment: fixed;
-  // background-position: center;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -13,7 +11,6 @@
     background-repeat: no-repeat;
     background-size: 105%;
     background-attachment: fixed;
-    // background-position: center;
   }
 
   // Tablet images
@@ -222,6 +219,6 @@
   }
 }
 
-.social__icon {
+.socials__icon {
   fill: currentColor;
 }
