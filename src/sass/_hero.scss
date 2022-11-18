@@ -53,7 +53,7 @@
     padding-bottom: 43px;
   }
   // Desctop styles
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 29px;
     padding-bottom: 90px;
   }
@@ -64,6 +64,8 @@
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
 
   //  Tablet styles
   @media screen and (min-width: 768px) {
@@ -73,8 +75,8 @@
   }
 
   // Desctop styles
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -91,7 +93,7 @@
     max-width: 319px;
   }
   // Desctop styles
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 758px;
   }
 }
@@ -115,7 +117,7 @@
     margin-bottom: 10px;
   }
   // Desctop styles
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 60px;
     line-height: 1.08;
     margin-bottom: 20px;
@@ -139,7 +141,7 @@
     margin-bottom: 24px;
   }
   // Desctop styles
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 28px;
@@ -191,7 +193,7 @@
     margin-bottom: 24px;
   }
   // Desctop styles
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 28px;
   }
 }
