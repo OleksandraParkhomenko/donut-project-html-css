@@ -400,17 +400,24 @@
 
             background: var(--primary-bg-button);
             filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+            transition: color var(--hover-animation),
+                background-color var(--hover-animation), box-shadow var(--hover-animation);
         }
 
         &__button:focus,
         &__button:hover {
+            cursor: pointer;
+            color: var(--primary-bg-button);
+            background-color: var(--accent-bg-button);
             border: 1px solid var(--primary-bg-button);
-            color: var(--accent-color-icon);
-            background: var(--accent-bg-button);
         }
 
         &__button:active {
+            color: var(--button-color-text);
+            background-color: var(--primary-bg-button);
+            border: 1px solid var(--accent-bg-button);
             box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+            filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
         }
     }
 }
